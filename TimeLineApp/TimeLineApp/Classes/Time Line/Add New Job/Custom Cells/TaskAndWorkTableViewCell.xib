@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskAndWorkTableViewCell" id="KGk-i7-Jjw" customClass="TaskAndWorkTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work Function" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="399-Cx-MOB">
+                        <rect key="frame" x="12" y="15" width="105" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="105" id="g5d-Ig-PKk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Ipv-05-M6m">
+                        <rect key="frame" x="120" y="10" width="232" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits"/>
+                    </textField>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_actions.png" translatesAutoresizingMaskIntoConstraints="NO" id="kAH-sq-qjD">
+                        <rect key="frame" x="328" y="14" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="MEC-X3-20H"/>
+                        </constraints>
+                    </imageView>
+                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Not Specified" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hqt-AB-zAq" customClass="IQDropDownTextField">
+                        <rect key="frame" x="127" y="10" width="203" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
+                    </textField>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QSy-ak-N55">
+                        <rect key="frame" x="118" y="2" width="240" height="46"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="taskAndWorkFuncButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HRg-mg-huJ"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="QSy-ak-N55" firstAttribute="leading" secondItem="399-Cx-MOB" secondAttribute="trailing" constant="1" id="18v-p7-gra"/>
+                    <constraint firstItem="kAH-sq-qjD" firstAttribute="bottom" secondItem="399-Cx-MOB" secondAttribute="bottom" id="1LV-r1-nzZ"/>
+                    <constraint firstItem="Ipv-05-M6m" firstAttribute="leading" secondItem="399-Cx-MOB" secondAttribute="trailing" constant="3" id="4ko-xS-AFj"/>
+                    <constraint firstItem="QSy-ak-N55" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-6" id="8q4-u2-XvW"/>
+                    <constraint firstItem="Hqt-AB-zAq" firstAttribute="leading" secondItem="399-Cx-MOB" secondAttribute="trailing" constant="10" id="HYd-BU-Drf"/>
+                    <constraint firstItem="Ipv-05-M6m" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="HyJ-u1-4Q7"/>
+                    <constraint firstItem="kAH-sq-qjD" firstAttribute="centerY" secondItem="Hqt-AB-zAq" secondAttribute="centerY" id="IZl-sC-NyT"/>
+                    <constraint firstItem="Ipv-05-M6m" firstAttribute="baseline" secondItem="Hqt-AB-zAq" secondAttribute="baseline" id="MPM-Tw-eKd"/>
+                    <constraint firstItem="Hqt-AB-zAq" firstAttribute="centerY" secondItem="399-Cx-MOB" secondAttribute="centerY" id="Po3-t7-h7U"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="kAH-sq-qjD" secondAttribute="trailing" constant="2" id="PyI-3I-fje"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Hqt-AB-zAq" secondAttribute="bottom" constant="1" id="X9H-QW-HxX"/>
+                    <constraint firstItem="399-Cx-MOB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="YDS-yz-hrn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="QSy-ak-N55" secondAttribute="trailing" constant="-6" id="Ygr-Ss-mPG"/>
+                    <constraint firstItem="Hqt-AB-zAq" firstAttribute="centerY" secondItem="QSy-ak-N55" secondAttribute="centerY" id="dSO-XQ-3jf"/>
+                    <constraint firstItem="Hqt-AB-zAq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="2" id="gEV-oX-DQw"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Hqt-AB-zAq" secondAttribute="trailing" constant="22" id="uaK-oJ-NLn"/>
+                    <constraint firstItem="Hqt-AB-zAq" firstAttribute="baseline" secondItem="399-Cx-MOB" secondAttribute="firstBaseline" id="zxD-HK-FBu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="headingLabel" destination="399-Cx-MOB" id="BQs-z1-B4I"/>
+                <outlet property="taskAndWorkTxtField" destination="Hqt-AB-zAq" id="8EO-vO-qIC"/>
+            </connections>
+            <point key="canvasLocation" x="40" y="148"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_actions.png" width="40" height="40"/>
+    </resources>
+</document>

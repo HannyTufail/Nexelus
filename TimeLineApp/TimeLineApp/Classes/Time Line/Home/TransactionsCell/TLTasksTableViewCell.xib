@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TLTasksTableViewCell" rowHeight="88" id="KGk-i7-Jjw" customClass="TLTasksTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="555" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hdu-cM-JA6">
+                        <rect key="frame" x="5" y="13" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="bGl-6W-aL2"/>
+                            <constraint firstAttribute="height" constant="21" id="bek-QS-8Q1"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2 Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jIK-tz-0Ua">
+                        <rect key="frame" x="37" y="13" width="275" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2 Description" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O12-ZE-Ds6">
+                        <rect key="frame" x="37" y="36" width="260" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="I0J-Cb-gHC">
+                        <rect key="frame" x="5" y="43" width="30" height="30"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CZ3-2X-Xlq" userLabel="Pin Un-pin button">
+                        <rect key="frame" x="2" y="0.0" width="32" height="85"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pinButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="GkO-2G-0nE"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="Fdz-cC-qrU">
+                        <rect key="frame" x="318" y="34" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="vLb-Ld-a8U"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xs4-39-ruK" userLabel="Selected Checkmark">
+                        <rect key="frame" x="310" y="0.0" width="50" height="88"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="checkmarkButtonAction:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="w9r-6t-Mci"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejx-s5-L9k">
+                        <rect key="frame" x="37" y="59" width="182" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23.75 hr(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Spy-2K-Fjb">
+                        <rect key="frame" x="233" y="59" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="q7A-aD-ce2"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.47843137254901957" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="Fdz-cC-qrU" secondAttribute="trailing" constant="9" id="01N-cP-XPM"/>
+                    <constraint firstItem="xs4-39-ruK" firstAttribute="firstBaseline" secondItem="CZ3-2X-Xlq" secondAttribute="firstBaseline" id="05q-C1-von"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Fdz-cC-qrU" secondAttribute="bottom" constant="20" id="5jJ-MJ-MUv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="I0J-Cb-gHC" secondAttribute="bottom" constant="6" id="62s-dv-5qt"/>
+                    <constraint firstItem="CZ3-2X-Xlq" firstAttribute="top" secondItem="xs4-39-ruK" secondAttribute="top" id="6Gm-hr-TR4"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="CZ3-2X-Xlq" secondAttribute="bottom" constant="-6" id="6oM-J3-hQh"/>
+                    <constraint firstItem="xs4-39-ruK" firstAttribute="leading" secondItem="O12-ZE-Ds6" secondAttribute="trailing" constant="13" id="70s-bm-56r"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="Ejx-s5-L9k" secondAttribute="bottom" constant="-1" id="85o-a3-US4"/>
+                    <constraint firstAttribute="trailing" secondItem="xs4-39-ruK" secondAttribute="trailing" id="8l9-sX-L14"/>
+                    <constraint firstItem="jIK-tz-0Ua" firstAttribute="leading" secondItem="O12-ZE-Ds6" secondAttribute="leading" id="BEY-ep-2G0"/>
+                    <constraint firstItem="I0J-Cb-gHC" firstAttribute="trailing" secondItem="Hdu-cM-JA6" secondAttribute="trailing" id="CRF-ug-Nrf"/>
+                    <constraint firstItem="Fdz-cC-qrU" firstAttribute="centerY" secondItem="O12-ZE-Ds6" secondAttribute="centerY" id="EQD-dZ-z7m"/>
+                    <constraint firstItem="Hdu-cM-JA6" firstAttribute="leading" secondItem="I0J-Cb-gHC" secondAttribute="leading" id="EsU-T7-fah"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="jIK-tz-0Ua" secondAttribute="trailing" constant="40" id="HXQ-WS-yuS"/>
+                    <constraint firstItem="Hdu-cM-JA6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="5" id="LxP-po-xTd"/>
+                    <constraint firstItem="jIK-tz-0Ua" firstAttribute="leading" secondItem="Hdu-cM-JA6" secondAttribute="trailing" constant="2" id="MnT-6l-3d4"/>
+                    <constraint firstItem="xs4-39-ruK" firstAttribute="baseline" secondItem="CZ3-2X-Xlq" secondAttribute="baseline" id="Mpc-eL-YvK"/>
+                    <constraint firstItem="Spy-2K-Fjb" firstAttribute="baseline" secondItem="Ejx-s5-L9k" secondAttribute="baseline" id="P9X-Tw-Lku"/>
+                    <constraint firstItem="CZ3-2X-Xlq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-6" id="WBF-5C-OnY"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="xs4-39-ruK" secondAttribute="bottom" constant="-9" id="WwA-bN-EwL"/>
+                    <constraint firstItem="Spy-2K-Fjb" firstAttribute="firstBaseline" secondItem="Ejx-s5-L9k" secondAttribute="firstBaseline" id="Zh4-gu-N1p"/>
+                    <constraint firstItem="CZ3-2X-Xlq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="aT1-9L-qxV"/>
+                    <constraint firstItem="Ejx-s5-L9k" firstAttribute="leading" secondItem="CZ3-2X-Xlq" secondAttribute="trailing" constant="3" id="jfE-Qj-Ds2"/>
+                    <constraint firstItem="Fdz-cC-qrU" firstAttribute="leading" secondItem="O12-ZE-Ds6" secondAttribute="trailing" constant="21" id="mNY-Cx-v92"/>
+                    <constraint firstItem="I0J-Cb-gHC" firstAttribute="top" secondItem="Hdu-cM-JA6" secondAttribute="bottom" constant="9" id="nLt-la-3ew"/>
+                    <constraint firstItem="O12-ZE-Ds6" firstAttribute="top" secondItem="jIK-tz-0Ua" secondAttribute="bottom" constant="2" id="nwG-BM-S3k"/>
+                    <constraint firstItem="Hdu-cM-JA6" firstAttribute="top" secondItem="jIK-tz-0Ua" secondAttribute="top" id="ra4-m3-Gyk"/>
+                    <constraint firstItem="Ejx-s5-L9k" firstAttribute="top" secondItem="O12-ZE-Ds6" secondAttribute="bottom" constant="2" id="tBd-GL-nYZ"/>
+                    <constraint firstItem="Fdz-cC-qrU" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="26" id="vTr-g8-eKH"/>
+                    <constraint firstItem="Spy-2K-Fjb" firstAttribute="leading" secondItem="Ejx-s5-L9k" secondAttribute="trailing" constant="14" id="weA-kY-nd4"/>
+                    <constraint firstItem="xs4-39-ruK" firstAttribute="leading" secondItem="Spy-2K-Fjb" secondAttribute="trailing" constant="7" id="xqP-tY-W7L"/>
+                    <constraint firstItem="Ejx-s5-L9k" firstAttribute="leading" secondItem="O12-ZE-Ds6" secondAttribute="leading" id="ya5-w1-mgd"/>
+                    <constraint firstItem="Hdu-cM-JA6" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="zO3-PS-bvT"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityNameLabel" destination="Ejx-s5-L9k" id="0cw-FW-XbA"/>
+                <outlet property="checkImageView" destination="Fdz-cC-qrU" id="DEl-PN-vTl"/>
+                <outlet property="checkmarkButton" destination="xs4-39-ruK" id="Qob-Sr-Zjb"/>
+                <outlet property="countLabel" destination="Hdu-cM-JA6" id="u73-AW-Il5"/>
+                <outlet property="hoursLabel" destination="Spy-2K-Fjb" id="GVh-Z5-o7p"/>
+                <outlet property="jobDescLabel" destination="O12-ZE-Ds6" id="lIg-8S-6bm"/>
+                <outlet property="jobIDLabel" destination="jIK-tz-0Ua" id="8Od-ZZ-Tyy"/>
+                <outlet property="pinButton" destination="CZ3-2X-Xlq" id="aPU-HA-cNY"/>
+                <outlet property="pinImageView" destination="I0J-Cb-gHC" id="0ux-pJ-ERq"/>
+            </connections>
+            <point key="canvasLocation" x="-2532" y="-81"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_unselected.png" width="44" height="44"/>
+        <image name="unpin.png" width="32" height="32"/>
+    </resources>
+</document>

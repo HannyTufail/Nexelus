@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AddImageViewController">
+            <connections>
+                <outlet property="imageView" destination="rMH-Wp-TM8" id="wod-Hs-khm"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt.png" translatesAutoresizingMaskIntoConstraints="NO" id="rMH-Wp-TM8">
+                    <rect key="frame" x="12" y="92" width="296" height="330"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AUs-AZ-WPD">
+                    <rect key="frame" x="0.0" y="518" width="320" height="50"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iFF-tL-aJy">
+                            <rect key="frame" x="8" y="3" width="143" height="44"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Z82-wv-dRD"/>
+                            </constraints>
+                            <state key="normal" title="Discard/Retake">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="discardButtonTpd:" destination="-1" eventType="touchUpInside" id="BBU-9X-Zed"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JXd-XY-FkH">
+                            <rect key="frame" x="166" y="3" width="143" height="44"/>
+                            <color key="backgroundColor" red="0.93333333330000001" green="0.93725490199999995" blue="0.94901960780000005" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="44" id="Dg3-eU-bR1"/>
+                            </constraints>
+                            <state key="normal" title="Process">
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                            <connections>
+                                <action selector="processButtonTpd:" destination="-1" eventType="touchUpInside" id="NBE-Wt-fDC"/>
+                            </connections>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="JXd-XY-FkH" secondAttribute="trailing" constant="11" id="5Rn-Dr-FXl"/>
+                        <constraint firstAttribute="centerY" secondItem="JXd-XY-FkH" secondAttribute="centerY" id="7MM-a9-hnH"/>
+                        <constraint firstItem="iFF-tL-aJy" firstAttribute="leading" secondItem="AUs-AZ-WPD" secondAttribute="leading" constant="8" id="DIK-ge-wmk"/>
+                        <constraint firstItem="iFF-tL-aJy" firstAttribute="width" secondItem="JXd-XY-FkH" secondAttribute="width" id="IaV-gG-HgV"/>
+                        <constraint firstItem="JXd-XY-FkH" firstAttribute="leading" secondItem="iFF-tL-aJy" secondAttribute="trailing" constant="15" id="OIr-GJ-aBh"/>
+                        <constraint firstItem="JXd-XY-FkH" firstAttribute="top" secondItem="AUs-AZ-WPD" secondAttribute="top" constant="3" id="Qkm-Uc-GIo"/>
+                        <constraint firstAttribute="centerY" secondItem="iFF-tL-aJy" secondAttribute="centerY" id="fLg-oB-G1o"/>
+                        <constraint firstAttribute="bottom" secondItem="JXd-XY-FkH" secondAttribute="bottom" constant="3" id="jT3-NT-5Mh"/>
+                        <constraint firstAttribute="bottom" secondItem="iFF-tL-aJy" secondAttribute="bottom" constant="3" id="saa-Re-Tbe"/>
+                        <constraint firstItem="iFF-tL-aJy" firstAttribute="top" secondItem="AUs-AZ-WPD" secondAttribute="top" constant="3" id="viX-3O-McV"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="rMH-Wp-TM8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="12" id="2lb-7Z-FZz"/>
+                <constraint firstItem="rMH-Wp-TM8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="92" id="56L-Eh-5XU"/>
+                <constraint firstAttribute="centerY" secondItem="rMH-Wp-TM8" secondAttribute="centerY" constant="27" id="6gp-tO-r0M"/>
+                <constraint firstAttribute="trailing" secondItem="AUs-AZ-WPD" secondAttribute="trailing" id="Dbb-mf-nXY"/>
+                <constraint firstAttribute="bottom" secondItem="AUs-AZ-WPD" secondAttribute="bottom" id="FfH-5L-BvM"/>
+                <constraint firstAttribute="centerX" secondItem="rMH-Wp-TM8" secondAttribute="centerX" id="bFj-IQ-mJK"/>
+                <constraint firstItem="AUs-AZ-WPD" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="g8A-i2-AWg"/>
+                <constraint firstAttribute="trailing" secondItem="rMH-Wp-TM8" secondAttribute="trailing" constant="12" id="u7H-kT-HrQ"/>
+            </constraints>
+            <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+            <point key="canvasLocation" x="101" y="314"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="receipt.png" width="128" height="128"/>
+    </resources>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AutoCompleteTableViewCell" id="KGk-i7-Jjw" customClass="AutoCompleteTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aVC-gi-n6o">
+                        <rect key="frame" x="10" y="5" width="150" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="150" id="AYO-TE-gq9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ck9-6E-T0F">
+                        <rect key="frame" x="195" y="5" width="155" height="34"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="aVC-gi-n6o" firstAttribute="firstBaseline" secondItem="ck9-6E-T0F" secondAttribute="firstBaseline" id="Au4-FD-xob"/>
+                    <constraint firstItem="ck9-6E-T0F" firstAttribute="leading" secondItem="aVC-gi-n6o" secondAttribute="trailing" constant="35" id="CQ9-44-R7m"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="aVC-gi-n6o" secondAttribute="bottom" constant="-4" id="IKN-rv-Ino"/>
+                    <constraint firstItem="aVC-gi-n6o" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="2" id="bq1-hF-c9U"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="ck9-6E-T0F" secondAttribute="trailing" constant="2" id="i5t-x9-yXi"/>
+                    <constraint firstItem="aVC-gi-n6o" firstAttribute="baseline" secondItem="ck9-6E-T0F" secondAttribute="baseline" id="iII-ti-Msr"/>
+                    <constraint firstItem="aVC-gi-n6o" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-3" id="shP-An-mRv"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="codeLabel" destination="aVC-gi-n6o" id="IVB-HU-Vg6"/>
+                <outlet property="descriptionLabel" destination="ck9-6E-T0F" id="c8O-eL-oew"/>
+            </connections>
+            <point key="canvasLocation" x="168" y="150"/>
+        </tableViewCell>
+    </objects>
+</document>

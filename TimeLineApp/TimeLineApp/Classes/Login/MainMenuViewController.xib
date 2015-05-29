@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MainMenuViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3aD-r3-Uwa">
+                    <rect key="frame" x="90" y="155" width="140" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="5v0-qC-dIL"/>
+                        <constraint firstAttribute="height" constant="85" id="qeH-2Z-CEQ"/>
+                    </constraints>
+                    <state key="normal" title="Expense Report">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="expenseReportButtonTpd:" destination="-1" eventType="touchUpInside" id="GhJ-Pt-Aji"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8iS-YJ-AT3">
+                    <rect key="frame" x="90" y="328" width="140" height="85"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="140" id="nLT-qp-weY"/>
+                        <constraint firstAttribute="height" constant="85" id="r86-wp-K30"/>
+                    </constraints>
+                    <state key="normal" title="Time Line">
+                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                    </state>
+                    <connections>
+                        <action selector="timeLineButtonTpd:" destination="-1" eventType="touchUpInside" id="pNO-Qz-Pap"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="8iS-YJ-AT3" secondAttribute="bottom" constant="155" id="dzh-IX-7Mo"/>
+                <constraint firstItem="3aD-r3-Uwa" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="155" id="f1d-Eb-m05"/>
+                <constraint firstAttribute="centerX" secondItem="8iS-YJ-AT3" secondAttribute="centerX" id="omV-Mq-1F1"/>
+                <constraint firstAttribute="centerX" secondItem="3aD-r3-Uwa" secondAttribute="centerX" id="ySx-Pf-P4k"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="-7" y="18"/>
+        </view>
+    </objects>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>

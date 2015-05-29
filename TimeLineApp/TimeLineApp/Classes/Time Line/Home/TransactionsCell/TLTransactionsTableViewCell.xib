@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TLTransactionsTableViewCell" rowHeight="88" id="OjT-YS-zQE" customClass="TLTransactionsTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OjT-YS-zQE" id="hoX-JA-iaI">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="999" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="al3-zV-lc2">
+                        <rect key="frame" x="5" y="15" width="30" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="30" id="Cde-2e-4R5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 2 Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="71l-9N-YbC">
+                        <rect key="frame" x="37" y="15" width="275" height="21"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="unpin.png" translatesAutoresizingMaskIntoConstraints="NO" id="T6u-ke-8oF">
+                        <rect key="frame" x="5" y="35" width="30" height="30"/>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GUn-II-Rb2" userLabel="Pin Un-pin button">
+                        <rect key="frame" x="2" y="0.0" width="32" height="85"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="pinButtonAction:" destination="OjT-YS-zQE" eventType="touchUpInside" id="mqo-3G-dId"/>
+                        </connections>
+                    </button>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="WTi-Oh-Ftk">
+                        <rect key="frame" x="318" y="34" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="i7C-BV-0wE"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="npk-KP-Ybd" userLabel="Selected Checkmark">
+                        <rect key="frame" x="310" y="0.0" width="50" height="88"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="checkmarkButtonAction:" destination="OjT-YS-zQE" eventType="touchUpInside" id="gqO-4b-Bn1"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Activity Code" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kqf-m5-csX">
+                        <rect key="frame" x="37" y="49" width="182" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="23.75 hr(s)" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lRf-Z5-b3J">
+                        <rect key="frame" x="233" y="49" width="70" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="70" id="nWj-TU-Qpq"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="al3-zV-lc2" firstAttribute="trailing" secondItem="T6u-ke-8oF" secondAttribute="trailing" id="2nb-9i-y95"/>
+                    <constraint firstItem="GUn-II-Rb2" firstAttribute="leading" secondItem="hoX-JA-iaI" secondAttribute="leadingMargin" constant="-6" id="BFH-dG-PXa"/>
+                    <constraint firstItem="npk-KP-Ybd" firstAttribute="leading" secondItem="lRf-Z5-b3J" secondAttribute="trailing" constant="7" id="C30-dE-kMv"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="T6u-ke-8oF" secondAttribute="bottom" constant="14" id="Etr-vm-sJx"/>
+                    <constraint firstItem="al3-zV-lc2" firstAttribute="bottom" secondItem="71l-9N-YbC" secondAttribute="bottom" id="Fng-5E-1hf"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="npk-KP-Ybd" secondAttribute="bottom" constant="-9" id="IOq-u7-E9I"/>
+                    <constraint firstAttribute="trailing" secondItem="npk-KP-Ybd" secondAttribute="trailing" id="KLO-HS-uX3"/>
+                    <constraint firstItem="WTi-Oh-Ftk" firstAttribute="top" secondItem="hoX-JA-iaI" secondAttribute="topMargin" constant="26" id="Nxb-WM-Yl9"/>
+                    <constraint firstItem="71l-9N-YbC" firstAttribute="leading" secondItem="al3-zV-lc2" secondAttribute="trailing" constant="2" id="PQK-nV-FAG"/>
+                    <constraint firstItem="GUn-II-Rb2" firstAttribute="top" secondItem="hoX-JA-iaI" secondAttribute="top" id="Qsq-KL-3M5"/>
+                    <constraint firstItem="71l-9N-YbC" firstAttribute="top" secondItem="al3-zV-lc2" secondAttribute="top" id="RY3-c9-XlI"/>
+                    <constraint firstItem="GUn-II-Rb2" firstAttribute="top" secondItem="npk-KP-Ybd" secondAttribute="top" id="Sxn-qG-5dU"/>
+                    <constraint firstItem="lRf-Z5-b3J" firstAttribute="firstBaseline" secondItem="kqf-m5-csX" secondAttribute="firstBaseline" id="TSy-xd-tUB"/>
+                    <constraint firstItem="71l-9N-YbC" firstAttribute="leading" secondItem="kqf-m5-csX" secondAttribute="leading" id="XFF-ux-U0F"/>
+                    <constraint firstItem="WTi-Oh-Ftk" firstAttribute="leading" secondItem="lRf-Z5-b3J" secondAttribute="trailing" constant="15" id="YT3-tu-QuN"/>
+                    <constraint firstItem="kqf-m5-csX" firstAttribute="top" secondItem="71l-9N-YbC" secondAttribute="bottom" constant="13" id="arD-Jp-huf"/>
+                    <constraint firstItem="npk-KP-Ybd" firstAttribute="baseline" secondItem="GUn-II-Rb2" secondAttribute="baseline" id="ay9-wo-leH"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="GUn-II-Rb2" secondAttribute="bottom" constant="-6" id="cLl-2c-E6j"/>
+                    <constraint firstItem="al3-zV-lc2" firstAttribute="leading" secondItem="T6u-ke-8oF" secondAttribute="leading" id="dcT-0g-mUL"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="al3-zV-lc2" secondAttribute="bottom" constant="43" id="e9b-gc-JU8"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="71l-9N-YbC" secondAttribute="trailing" constant="40" id="ecC-eo-FPT"/>
+                    <constraint firstItem="T6u-ke-8oF" firstAttribute="top" secondItem="hoX-JA-iaI" secondAttribute="topMargin" constant="27" id="hF1-Sc-F6O"/>
+                    <constraint firstItem="kqf-m5-csX" firstAttribute="leading" secondItem="GUn-II-Rb2" secondAttribute="trailing" constant="3" id="iAO-bd-dPd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="WTi-Oh-Ftk" secondAttribute="bottom" constant="20" id="kRa-hU-6Np"/>
+                    <constraint firstItem="lRf-Z5-b3J" firstAttribute="leading" secondItem="kqf-m5-csX" secondAttribute="trailing" constant="14" id="l1L-rR-1TJ"/>
+                    <constraint firstItem="npk-KP-Ybd" firstAttribute="firstBaseline" secondItem="GUn-II-Rb2" secondAttribute="firstBaseline" id="og3-TQ-D3u"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="WTi-Oh-Ftk" secondAttribute="trailing" constant="9" id="pGx-2A-hl8"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="kqf-m5-csX" secondAttribute="bottom" constant="9" id="sAR-QB-1x8"/>
+                    <constraint firstItem="kqf-m5-csX" firstAttribute="baseline" secondItem="lRf-Z5-b3J" secondAttribute="baseline" id="vae-Oi-5yZ"/>
+                    <constraint firstItem="al3-zV-lc2" firstAttribute="leading" secondItem="hoX-JA-iaI" secondAttribute="leadingMargin" constant="-3" id="wJi-qV-ucG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="activityNameLabel" destination="kqf-m5-csX" id="SxZ-nX-u1s"/>
+                <outlet property="checkImageView" destination="WTi-Oh-Ftk" id="Iyx-mP-iBg"/>
+                <outlet property="checkmarkButton" destination="npk-KP-Ybd" id="4JU-4J-E7A"/>
+                <outlet property="countLabel" destination="al3-zV-lc2" id="Exp-vU-UYQ"/>
+                <outlet property="hoursLabel" destination="lRf-Z5-b3J" id="jcD-rQ-Z9E"/>
+                <outlet property="jobIDLabel" destination="71l-9N-YbC" id="50W-y6-eeR"/>
+                <outlet property="pinButton" destination="GUn-II-Rb2" id="iRd-r1-ng3"/>
+                <outlet property="pinImageView" destination="T6u-ke-8oF" id="MUn-oP-vUy"/>
+            </connections>
+            <point key="canvasLocation" x="-2483" y="-101"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_unselected.png" width="44" height="44"/>
+        <image name="unpin.png" width="32" height="32"/>
+    </resources>
+</document>

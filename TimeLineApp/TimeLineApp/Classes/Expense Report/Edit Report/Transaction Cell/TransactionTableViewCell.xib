@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="7702" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="TransactionTableViewCell" id="KGk-i7-Jjw" userLabel="TransactionTableViewCell" customClass="TransactionTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="88"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Ht-eq-BKD">
+                        <rect key="frame" x="95" y="16" width="210" height="56"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="210" id="rKU-qL-DEb"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="receipt.png" translatesAutoresizingMaskIntoConstraints="NO" id="0ws-hR-UtR">
+                        <rect key="frame" x="5" y="8" width="81" height="71"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="81" id="Z3J-vB-vb9"/>
+                        </constraints>
+                    </imageView>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icn_unselected.png" translatesAutoresizingMaskIntoConstraints="NO" id="LnC-F9-Aqp">
+                        <rect key="frame" x="318" y="34" width="25" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="25" id="WRC-Bf-L3d"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ipj-sJ-w9T" userLabel="Selected Checkmark">
+                        <rect key="frame" x="310" y="0.0" width="50" height="88"/>
+                        <state key="normal">
+                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                        </state>
+                        <connections>
+                            <action selector="checkedButtonTpd:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WJb-E5-awx"/>
+                        </connections>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="LnC-F9-Aqp" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="26" id="AIK-PD-EHu"/>
+                    <constraint firstItem="8Ht-eq-BKD" firstAttribute="centerY" secondItem="Ipj-sJ-w9T" secondAttribute="centerY" id="CUk-4G-kPa"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="Ipj-sJ-w9T" secondAttribute="trailing" constant="-8" id="E1M-hO-6tC"/>
+                    <constraint firstItem="Ipj-sJ-w9T" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Eje-Fq-hSS"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="LnC-F9-Aqp" secondAttribute="bottom" constant="20" id="MtM-hU-jBW"/>
+                    <constraint firstItem="0ws-hR-UtR" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="-3" id="O6i-fb-noS"/>
+                    <constraint firstItem="Ipj-sJ-w9T" firstAttribute="leading" secondItem="8Ht-eq-BKD" secondAttribute="trailing" constant="5" id="Rop-zv-e31"/>
+                    <constraint firstItem="8Ht-eq-BKD" firstAttribute="leading" secondItem="0ws-hR-UtR" secondAttribute="trailing" constant="9" id="Y6N-Yp-kbi"/>
+                    <constraint firstItem="8Ht-eq-BKD" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="8" id="dlR-Rz-WKn"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="LnC-F9-Aqp" secondAttribute="trailing" constant="9" id="i19-lc-kb7"/>
+                    <constraint firstItem="0ws-hR-UtR" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" id="vTW-29-qUo"/>
+                    <constraint firstItem="0ws-hR-UtR" firstAttribute="bottom" secondItem="H2p-sc-9uM" secondAttribute="bottomMargin" id="y2N-me-ctd"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="8Ht-eq-BKD" secondAttribute="bottom" constant="7" id="z4t-VD-ova"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="checkedImageView" destination="LnC-F9-Aqp" id="pC5-Vs-shp"/>
+                <outlet property="checkmarkButton" destination="Ipj-sJ-w9T" id="rLV-Nd-AQL"/>
+                <outlet property="transactionImageView" destination="0ws-hR-UtR" id="Cxb-Fy-GAV"/>
+                <outlet property="transactionInfoLabel" destination="8Ht-eq-BKD" id="YTy-9J-dIw"/>
+            </connections>
+            <point key="canvasLocation" x="298" y="150"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="icn_unselected.png" width="44" height="44"/>
+        <image name="receipt.png" width="128" height="128"/>
+    </resources>
+</document>

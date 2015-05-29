@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6254" systemVersion="13F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6247"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="JobHoursTableViewCell" id="KGk-i7-Jjw" customClass="JobHoursTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="360" height="50"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hours" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3BN-58-2nc">
+                        <rect key="frame" x="12" y="14" width="83" height="21"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="83" id="nJj-br-uZk"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <stepper opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" minimumValue="-8" maximumValue="8" stepValue="0.25" translatesAutoresizingMaskIntoConstraints="NO" id="K6I-Bw-LcB">
+                        <rect key="frame" x="258" y="10" width="94" height="29"/>
+                        <connections>
+                            <action selector="hoursStepperValueChanged:" destination="KGk-i7-Jjw" eventType="valueChanged" id="mL7-3R-QBd"/>
+                        </connections>
+                    </stepper>
+                    <textField opaque="NO" tag="106" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2pi-hy-SFF">
+                        <rect key="frame" x="120" y="10" width="129" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                        <connections>
+                            <outlet property="delegate" destination="KGk-i7-Jjw" id="1wC-dk-28E"/>
+                        </connections>
+                    </textField>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="3BN-58-2nc" firstAttribute="centerY" secondItem="K6I-Bw-LcB" secondAttribute="centerY" id="Ihf-FS-udN"/>
+                    <constraint firstItem="K6I-Bw-LcB" firstAttribute="leading" secondItem="2pi-hy-SFF" secondAttribute="trailing" constant="9" id="L7V-AI-8Vz"/>
+                    <constraint firstItem="3BN-58-2nc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="6" id="RZX-2w-SrO"/>
+                    <constraint firstItem="2pi-hy-SFF" firstAttribute="top" secondItem="K6I-Bw-LcB" secondAttribute="top" id="W8J-It-1nh"/>
+                    <constraint firstItem="2pi-hy-SFF" firstAttribute="leading" secondItem="3BN-58-2nc" secondAttribute="trailing" constant="25" id="adx-nz-TmG"/>
+                    <constraint firstItem="3BN-58-2nc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="c6R-kx-U0x"/>
+                    <constraint firstItem="3BN-58-2nc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="4" id="n79-2W-1wJ"/>
+                    <constraint firstItem="K6I-Bw-LcB" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="tfL-u6-tt3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="hoursStepper" destination="K6I-Bw-LcB" id="Q50-LS-hSo"/>
+                <outlet property="hoursTxtField" destination="2pi-hy-SFF" id="X5I-NR-BDC"/>
+            </connections>
+            <point key="canvasLocation" x="-68" y="100"/>
+        </tableViewCell>
+    </objects>
+</document>
